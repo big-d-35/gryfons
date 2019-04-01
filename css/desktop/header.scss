@@ -10,7 +10,7 @@
     position: absolute;
     left: 0px;
     top: 0px;
-    background: white;
+    background:$text-primary-color;
     &__logos {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -46,10 +46,38 @@
         margin-bottom: 20px;
     }
     &__slogan {
+        transform: rotate(-90deg);
+        width: 220px;
+        color: $text-color;
+        font-family: $title-font-family;
+        font-size: $title3;
         
-        
-        
-        
+    }
+    &__nav {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__link {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 0px;
+        font-size: $title2;
+        color: $text-color;
+        text-decoration: none;
+        &:hover {
+            color: $title-color;
+            transition-duration: .4s
+        }
     }
 }
 

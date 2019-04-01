@@ -1,3 +1,39 @@
 .footer {
-    display: none;
+    animation: fromright;
+    animation-duration: 0.7s;
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background: $dark-primary-color;
+    &__menu {
+        animation: fadein;
+        animation-duration: 0.7s;
+        margin-top: 20px;
+       margin-bottom: 20px;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 0px;
+        font-size: $title2;
+        color: $divider-color;
+        &:hover {
+            color: $text-primary-color;
+            transition-duration: .4s
+        } 
+    }
+    &__block {
+        margin-left: 50px;
+    }
 }

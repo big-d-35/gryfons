@@ -69,10 +69,11 @@
             </div>
             <nav class="header__nav">
                 <a href="tel:+79259049590" class="header__link"><i class="fas fa-phone"></i></a>
+                <a href="https://wa.me/79259049590" class="header__link"><i class="fab fa-whatsapp"></i></a>
                  <a href="mailto:bkgryphons@gmail.com" class="header__link"><i class="far fa-envelope"></i></a>
                  <a href="https://vk.com/inballwetrust" class="header__link" target="_blank"><i class="fab fa-vk"></i></a>
                  <a href="https://www.instagram.com/bkgrifons/" class="header__link" target="_blank"><i class="fab fa-instagram"></i></a>
-                 <a href="" class="header__link"><i class="fab fa-whatsapp"></i></a>
+                 
                  <button id="header-adress-button" class="header__link"><i class="fas fa-map-marked-alt"></i></button>
                  <button href="" class="header__link"><i class="fas fa-home"></i></button>
             </nav>
@@ -660,6 +661,10 @@
     <!-- FOOTER START ======================================================================= -->
           
         <footer class="footer">
+           <button class="footer__menu" id="footer-menu-button">
+               <i class="far fa-arrow-alt-circle-left" id="footer-icon-left"></i>
+               <i class="far fa-arrow-alt-circle-right display-none" id="footer-icon-right"></i>
+            </button>
             <div class="footer__block">
                 <h5 class="footer__title">Баскетбольный Клуб Грифоны</h5>
                 <p class="footer__text">Тренировки по баскетболу в Москве для детей и взрослых.</p>
@@ -672,7 +677,7 @@
                     <a class="footer__icon" href="https://vk.com/inballwetrust"><i class="fa fa-vk fa-lg"></i></a>
                     <a class="footer__icon" href="https://www.instagram.com/bkgrifons/"><i class="fa fa-instagram fa-lg"></i></a>
                 </div>
-                <q class="footer__quote">Победитель окружает себя другими победителями</q>
+                <span class="footer__quote">Победитель окружает себя другими победителями</span>
             </div>
             <div class="footer__block">
                 <address class='footer__adress'>
@@ -711,17 +716,7 @@
 
 <!-- APP SCRIPT START ==================================================================== -->        
  
-<script>
-const buttonHeaderMenu = document.getElementById('header-button-menu');
-const iconHeaderMenuBack = document.getElementById('header-icon-back');
-const iconHeaderMenu = document.getElementById('header-icon-menu');
-    
-buttonHeaderMenu.onclick = function(){
-    iconHeaderMenuBack.classList.toggle('display-none');
-    iconHeaderMenu.classList.toggle('display-none');
-}
-    
-</script>
+<script src="js/main.min.js"></script>
                 
 <!-- APP SCRIPT END ==================================================================== -->        
        
