@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Roboto');
+
+$main-font-family: 'Roboto', sans-serif;
+$title-font-family: 'Amatic SC', cursive;
+
+$body: 20px;
+$title1: $body*3;
+$title2: $body*1.5;
+$title3: $body*1;
+$sub-title: $body*0.75;
+
+$text-primary-color: #FFFFFF; //white
+$title-color: #212121; //black
+$text-color: #757575; //grey
+$divider-color: #BDBDBD; //light grey
+$accent-color: #FF5722; //orange
+$dark-primary-color: #5D4037; //dark-brown
+$default-primary-color: #795548; //brown
+$light-primary-color: #D7CCC8; //light brown
