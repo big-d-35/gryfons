@@ -660,36 +660,41 @@
     <!-- MAIN END ========================================================================= -->                                                                                                                                                    
     <!-- FOOTER START ======================================================================= -->
           
-        <footer class="footer">
+        <footer class="footer " id="footer">
            <button class="footer__menu" id="footer-menu-button">
                <i class="far fa-arrow-alt-circle-left" id="footer-icon-left"></i>
                <i class="far fa-arrow-alt-circle-right display-none" id="footer-icon-right"></i>
             </button>
             <div class="footer__block">
-                <h5 class="footer__title">Баскетбольный Клуб Грифоны</h5>
+                
+                <h5 class="footer__title">Баскетбольный Клуб Грифоны </h5>
                 <p class="footer__text">Тренировки по баскетболу в Москве для детей и взрослых.</p>
-                <p class="footer__text">Клуб основан в 2012 году.</p>
-                <p class="footer__text">сегодня:<input class="footer__date" type="date" id="today-date"></p>
+                
+                
             </div>
-            <div class="footer__block">
-                <div class="footer__icons">
-                    <a class="footer__icon" href="mailto:bkgryphons@gmail.com"><i class="fa fa-envelope-o fa-lg"></i></a>
-                    <a class="footer__icon" href="https://vk.com/inballwetrust"><i class="fa fa-vk fa-lg"></i></a>
-                    <a class="footer__icon" href="https://www.instagram.com/bkgrifons/"><i class="fa fa-instagram fa-lg"></i></a>
-                </div>
-                <span class="footer__quote">Победитель окружает себя другими победителями</span>
-            </div>
+            
             <div class="footer__block">
                 <address class='footer__adress'>
+                   
                     <h5 class="footer__title">Наш адрес:</h5>
                     <p class="footer__text">Москва, улица Остоженка дом 38</p>
                     <h5 class="footer__title">Телефон:</h5>
                     <a class="footer__link" href="tel:+79259049590">8 (925) 904-95-90</a>
                 </address>
-                <h6 class="footer__slogan">Мы здесь чтобы побеждать</h6>
+                <h6 class="footer__slogan">Победитель окружает себя другими победителями.</h6>
+                <h6 class="footer__slogan">Мы здесь чтобы побеждать!</h6>
+                
                 
             </div>
             <div class="footer__block">
+                <div class="footer__icons">
+                    <a class="footer__icon" href="mailto:bkgryphons@gmail.com"><i class="far fa-envelope"></i></a>
+                    <a class="footer__icon" href="https://vk.com/inballwetrust"><i class="fab fa-vk"></i></a>
+                    <a class="footer__icon" href="https://www.instagram.com/bkgrifons/"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p class="footer__date"><i class="fas fa-basketball-ball"></i> Клуб основан в 2012 году</p>
+            </div>
+            <div class="footer__map">
                 <iframe class="lazy" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8024.980522712003!2d37.58784464899115!3d55.73428641978148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54baf49fd9dd9%3A0xdbd3657d77b2966!2z0YPQuy4g0J7RgdGC0L7QttC10L3QutCwLCAzOCwg0JzQvtGB0LrQstCwLCAxMTkwMzQ!5e0!3m2!1sru!2sru!4v1514369522808" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             
@@ -760,11 +765,6 @@ $(document).ready(function() {
 
 <!-- FORM SUBMIT START ==================================================================== --> 
 
-<script >
-//time-clock-footer
-    document.getElementById("today-date").valueAsDate = new Date()
- 
-</script>
 
 <!-- SCRIPTS END ====================================================================== -->   
 

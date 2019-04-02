@@ -1,3 +1,4 @@
+
 .footer {
     animation: fromright;
     animation-duration: 0.7s;
@@ -8,9 +9,11 @@
     justify-content: space-between;
     align-items: flex-start;
     position: absolute;
-    right: 0px;
+    right: -350px;
     top: 0px;
+    
     background: $dark-primary-color;
+    
     &__menu {
         animation: fadein;
         animation-duration: 0.7s;
@@ -27,7 +30,7 @@
         background: transparent;
         border: 0px;
         font-size: $title2;
-        color: $divider-color;
+        color: $light-primary-color;
         &:hover {
             color: $text-primary-color;
             transition-duration: .4s
@@ -35,5 +38,78 @@
     }
     &__block {
         margin-left: 50px;
+        width: 84%;
+        margin-bottom: 20px;
+        
     }
+    &__title {
+        font-family:$title-font-family;
+        font-size: $title2;
+        margin-bottom: 5px;
+        color: $light-primary-color;
+        line-height: 1.5;
+    }
+    &__text {
+        
+        margin-bottom: 20px;
+        line-height: 1.2;
+       font-family: $main-font-family;
+        color: $light-primary-color;
+        font-size: $sub-title;
+    }
+    &__icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    &__icon {
+        cursor: pointer;
+        color: $light-primary-color;
+        font-size: $title2;
+        margin-right: 10px;
+        &:hover {
+            color: $text-primary-color;
+            transition-duration: .4s
+        } 
+    }
+    &__adress {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    &__link {
+        text-decoration: none;
+        cursor: pointer;
+        font-family: $main-font-family;
+        color: $light-primary-color;
+        font-size: $title3;
+        &:hover {
+            color: $text-primary-color;
+            transition-duration: .4s
+        } 
+    }
+    &__slogan {
+        margin-bottom: 10px;
+        line-height: 1.2;
+       font-family: $main-font-family;
+        color: $light-primary-color;
+        font-size: $sub-title;
+        
+    }
+    &__map {
+        margin-left: 50px;
+        width: 87%;
+    }
+    &__date {
+        
+        line-height: 1.2;
+        font-family: $main-font-family;
+        color: $light-primary-color;
+        font-size: 12px;
+    }
+}
+.footer-display-right {
+    right: 350px;
 }
