@@ -1,5 +1,6 @@
 
 .footer {
+    z-index: 11;
     animation: fromright;
     animation-duration: 0.7s;
     width: 400px;
@@ -7,39 +8,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
-    position: absolute;
-    right: -350px;
+    align-items: center;
+    position: fixed;
+    right: 0px;
     top: 0px;
     
     background: $dark-primary-color;
+    border-left: 8px solid white;
     
-    &__menu {
-        animation: fadein;
-        animation-duration: 0.7s;
-        margin-top: 20px;
-       margin-bottom: 20px;
-        margin-left: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        width: 40px;
-        height: 40px;
-        background: transparent;
-        border: 0px;
-        font-size: $title2;
-        color: $light-primary-color;
-        &:hover {
-            color: $text-primary-color;
-            transition-duration: .4s
-        } 
-    }
     &__block {
-        margin-left: 50px;
-        width: 84%;
-        margin-bottom: 20px;
+        
+        width: 90%;
+        margin-top: 20px;
         
     }
     &__title {
@@ -99,17 +79,14 @@
         
     }
     &__map {
-        margin-left: 50px;
-        width: 87%;
+        height: 35%;
+        width: 100%;
     }
     &__date {
-        
+        margin-bottom: 10px;
         line-height: 1.2;
         font-family: $main-font-family;
         color: $light-primary-color;
         font-size: 12px;
     }
-}
-.footer-display-right {
-    right: 350px;
 }

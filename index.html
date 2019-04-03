@@ -42,7 +42,9 @@
     <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     
-<!-- FAVICON ======================================================= -->        
+<!-- FAVICON ======================================================= -->  
+
+      <script src="https://vk.com/js/api/openapi.js?151" type="text/javascript"></script> <!-- подключение виджета вк-->      
 </head>
 
 <!-- HEAD END ========================================================================= -->
@@ -75,7 +77,7 @@
                  <a href="https://www.instagram.com/bkgrifons/" class="header__link" target="_blank"><i class="fab fa-instagram"></i></a>
                  
                  <button id="header-adress-button" class="header__link"><i class="fas fa-map-marked-alt"></i></button>
-                 <button href="" class="header__link"><i class="fas fa-home"></i></button>
+                 <button id="header-home-button" class="header__link"><i class="fas fa-home"></i></button>
             </nav>
         </header>
     
@@ -87,49 +89,50 @@
        
     <!-- HOME PAGE START ==================================================================== --> 
           
-    <section class="home">
-       <picture class="home__logo">
+    <section class="home display-none"id="page-home">
+       <picture >
               <source media="all and (min-width: 1201px)"
-                      data-srcset="images/logo/gypfons_logo_800.png">
+                      data-srcset="images/logo/grypfons_logo_800.png">
 
               <source media="all and (min-width: 901px) and (max-width: 1200px)"
-                      data-srcset="images/logo/gypfons_logo_500.png">
+                      data-srcset="images/logo/grypfons_logo_500.png">
 
              <source media="all and (min-width: 601px) and (max-width: 900px)"
-                      data-srcset="images/logo/gypfons_logo_300.png">
+                      data-srcset="images/logo/grypfons_logo_300.png">
                       
             <source media="all and (max-width: 600px)"
-                      data-srcset="images/logo/gypfons_logo_300.png">
+                      data-srcset="images/logo/grypfons_logo_300.png">
              
-              <img data-src="images/logo/gypfons_logo_500.png"
-                  alt="логотип клуба" class="lazy">
+              <img  data-src="images/logo/grypfons_logo_500.png"
+                  alt="логотип клуба" class="home__logo lazy">
 
         </picture>
         
         <div class="home__titles">
-            <h1 class="home__title">Тренировки по баскетболу</h1>
-            <h2 class="home__subtitle">Принимаем детей и взрослых в группы разного уровня</h2>
+            <h1 class="home__title">Баскетбольный клуб Грифоны</h1>
+            <h2 class="home__subtitle"><i class="fas fa-basketball-ball"></i> Тренировки по баскетболу в Москве</h2>
         </div>
         <div class="home__info">
-            <picture class="home__poster">
+            <picture >
                   <source media="all and (min-width: 1201px)"
-                          data-srcset="images/page__home/jersey__page__home__800px.jpg">
+                          data-srcset="images/page__home/home-poster-1000px.jpg">
 
                   <source media="all and (min-width: 901px) and (max-width: 1200px)"
-                          data-srcset="images/page__home/jersey__page__home__600px.jpg">
+                          data-srcset="images/page__home/home-poster-800px.jpg">
 
                   <source media="all and (min-width: 601px) and (max-width: 900px)"
-                          data-srcset="images/page__home/jersey__page__home__600px.jpg">
+                          data-srcset="images/page__home/home-poster-600px.jpg">
 
                   <source media="all and (max-width: 600px)"
-                          data-srcset="images/page__home/jersey__page__home__400px.jpg">
+                          data-srcset="images/page__home/home-poster-400px.jpg">
 
-                  <img data-src="images/page__home/jersey__page__home__600px.jpg"
-                      alt="jersey клуба" class="lazy">
+                  <img data-src="images/page__home/home-poster-600px.jpg"
+                      alt="jersey клуба" class="home__poster lazy">
 
             </picture>
+            <button class="home__button">Записаться на тренировку</button>
             <div class="home__information">
-                <h2 class="home__sectitle">Наш клуб проводит тренировки по баскетболу <i class="fas fa-basketball-ball"></i></h2>
+                <h2 class="home__sectitle">Наш клуб проводит тренировки по баскетболу </h2>
                 <p class="home__text">Мы принимаем детей от 6 лет и взрослых. Если ты готов по-настоящему тренироваться, найти новых друзей и почувствовать себя членом команды, приходи к нам на просмотр!</p>
                 <p class="home__text">Здесь собираются люди, которые любят баскетбол и хотят продолжать совершенствовать свои навыки игры. Мы ценим дисциплину, труд и стремление с каждым днем становиться лучше, как на площадке так и вне нее.</p>
                 <p class="home__text">Здесь ты найдешь таких же целеустремленных людей, готовых работать для достижения общей цели команды. Приходи к нам, стань частью спортивного сообщества на базе БК «Грифоны».</p>
@@ -138,7 +141,7 @@
                     <span class="home__name">Майкл Джордан</span>
                     <img data-src="images/page__home/jordan.jpg" alt="Jordan" class="lazy home__icon">
                 </div>
-                <button class="home__button">Записаться на тренировку</button>
+                
             </div>
         </div>
     </section>
@@ -147,24 +150,8 @@
     
      <!-- MENU PAGE START ==================================================================== --> 
              
-    <section class="menu">
-        <picture class="menu__poster">
-              <source media="all and (min-width: 1201px)"
-                      data-srcset="images/page__menu/page__menu__1000px.jpg">
-
-              <source media="all and (min-width: 901px) and (max-width: 1200px)"
-                      data-srcset="images/page__menu/page__menu__800px.jpg">
-
-             <source media="all and (min-width: 601px) and (max-width: 900px)"
-                      data-srcset="images/page__menu/page__menu__600px.jpg">
-                      
-            <source media="all and (max-width: 600px)"
-                      data-srcset="images/page__menu/page__menu__400px.jpg">
-             
-              <img data-src="images/page__menu/page__menu__800px.jpg"
-                  alt="poster" class="lazy">
-
-        </picture>
+    <section class="menu display-none" id="page-menu">
+        <h2 class="menu__title">Навигация по сайту:</h2> 
         <div class="menu__plate">
             <div class="menu__links">
                 <a href="" class="menu__link">Главная <i class="fas fa-home"></i></a>
@@ -179,19 +166,37 @@
                 <a href="" class="menu__link">Статьи <i class="fas fa-basketball-ball"></i></a>
             </div>
             <div class="menu__links">
-                <a href="" class="menu__link">Медиа <i class="fas fa-basketball-ball"></i></a>
+                <a href="" class="menu__link">Медиа <i class="far fa-images"></i></a>
             </div>
             <div class="menu__links">
                 <a href="" class="menu__link">Контакты <i class="fas fa-map-pin"></i></a>
             </div>
         </div>
+        <picture >
+              <source media="all and (min-width: 1201px)"
+                      data-srcset="images/page__menu/page__menu__1000px.jpg">
+
+              <source media="all and (min-width: 901px) and (max-width: 1200px)"
+                      data-srcset="images/page__menu/page__menu__800px.jpg">
+
+             <source media="all and (min-width: 601px) and (max-width: 900px)"
+                      data-srcset="images/page__menu/page__menu__600px.jpg">
+                      
+            <source media="all and (max-width: 600px)"
+                      data-srcset="images/page__menu/page__menu__400px.jpg">
+             
+              <img data-src="images/page__menu/page__menu__800px.jpg"
+                  alt="poster" class="menu__poster lazy">
+
+        </picture>
     </section>    
                               
     <!-- MENU PAGE END ==================================================================== -->                                          
    
     <!-- FORM PAGE START ==================================================================== -->                                                                       
-    <div class="form">
-       <picture class="form__poster">
+    <div class="form display-none" id="page-form">
+      <h2 class="form__title">Запишись на тренировку!</h2>
+       <picture >
               <source media="all and (min-width: 1201px)"
                       data-srcset="images/page__contacts/contacts__1000px.jpg">
 
@@ -205,12 +210,12 @@
                       data-srcset="images/page__contacts/contacts__400px.jpg">
              
               <img data-src="images/page__contacts/contacts__800px.jpg"
-                  alt="poster" class="lazy">
+                  alt="poster" class="form__poster lazy">
 
         </picture>
         <form class="form__field"> <!--форма для связи-->
             <fieldset>
-                <legend class="form__legend">Запишись на тренировку!</legend>
+                <legend ></legend>
 
                 <!-- Hidden Required Fields -->
                 <input type="hidden" name="project_name" value="грифоны.рф">
@@ -229,7 +234,7 @@
                       <!-- VK Widget -->
                     <div id="vk_groups"></div>
                     <script type="text/javascript">
-                    VK.Widgets.Group("vk_groups", {mode: 4, width: "auto", height: "400px"}, 57459796);
+                    VK.Widgets.Group("vk_groups", {mode: 5, width: "auto", height: "400px"}, 57459796);
                     </script>
                    
             </div>
@@ -255,8 +260,8 @@
     <!-- MEDIA PAGE START ==================================================================== --> 
         
     
-    <section class="media">
-       <h2 class="media__title">Фотографии команды: <i class="far fa-images"></i></h2>
+    <section class="media display-none" id="page-media">
+       <h2 class="media__title">Фотографии команды:</h2>
         <div class="media__pictures">
             <div class="media__slider">
                  <div class="media__slide">
@@ -585,10 +590,11 @@
             </div> 
             
         </div>
-        <h2 class="media__title">Логотипы команды: <i class="far fa-image"></i></h2>
+        <h2 class="media__title">Логотипы команды:</h2>
         <div class="media__files">
+         
             <div class="media__logos">
-                 <div class="media__logo">
+                 
                      <picture >
                           <source media="all and (min-width: 1201px)"
                                   data-srcset="images/logo/grypfons_logo_500.png">
@@ -603,11 +609,10 @@
                                   data-srcset="images/logo/grypfons_logo_150.png">
 
                           <img data-src="images/logo/grypfons_logo_300.png"
-                              alt="poster" class="lazy">
+                              alt="poster" class="media__logo lazy">
 
                      </picture>   
-                </div>
-                <div class="media__logo">
+                
                     <picture >
                           <source media="all and (min-width: 1201px)"
                                   data-srcset="images/logo/GR_grypfons_logo_512x512.png">
@@ -622,11 +627,10 @@
                                   data-srcset="images/logo/GR_grypfons_logo_192x192.png">
 
                           <img data-src="images/logo/GR_grypfons_logo_192x192.png"
-                              alt="poster" class="lazy">
+                              alt="poster" class="media__logo lazy">
 
                      </picture>    
-                </div>
-                <div class="media__logo">
+               
                       <picture >
                           <source media="all and (min-width: 1201px)"
                                   data-srcset="images/logo/face_grypfons__logo_768px.png">
@@ -641,13 +645,13 @@
                                   data-srcset="images/logo/face_grypfons__logo_150px.png">
 
                           <img data-src="images/logo/face_grypfons__logo_300px.png"
-                              alt="poster" class="lazy">
+                              alt="poster" class="media__logo lazy">
 
                      </picture>      
-                </div>
+                
                 
             </div> 
-            <a href="files/logo.rar" class="media__download" target="_blank">Скачать логотипы <i class="fas fa-file-download"></i></a>
+            <a href="files/logo.rar" class="media__download" target="_blank">Скачать все логотипы одним файлом <i class="fas fa-file-download"></i></a>
         </div>
             
         </section>
@@ -660,15 +664,12 @@
     <!-- MAIN END ========================================================================= -->                                                                                                                                                    
     <!-- FOOTER START ======================================================================= -->
           
-        <footer class="footer " id="footer">
-           <button class="footer__menu" id="footer-menu-button">
-               <i class="far fa-arrow-alt-circle-left" id="footer-icon-left"></i>
-               <i class="far fa-arrow-alt-circle-right display-none" id="footer-icon-right"></i>
-            </button>
+        <footer class="footer" id="footer">
+           
             <div class="footer__block">
                 
                 <h5 class="footer__title">Баскетбольный Клуб Грифоны </h5>
-                <p class="footer__text">Тренировки по баскетболу в Москве для детей и взрослых.</p>
+                <p class="footer__text">Тренировки по баскетболу в Москве для детей и взрослых.<br><br>Приходи к нам если хочешь научиться тонкостям игры в баскетбол. Мы совершенствуем навык игры на каждом занятии.</p>
                 
                 
             </div>
@@ -681,21 +682,23 @@
                     <h5 class="footer__title">Телефон:</h5>
                     <a class="footer__link" href="tel:+79259049590">8 (925) 904-95-90</a>
                 </address>
-                <h6 class="footer__slogan">Победитель окружает себя другими победителями.</h6>
-                <h6 class="footer__slogan">Мы здесь чтобы побеждать!</h6>
+                
                 
                 
             </div>
             <div class="footer__block">
+               <h6 class="footer__slogan">Победитель окружает себя другими победителями.</h6>
+                <h6 class="footer__slogan">Мы здесь чтобы побеждать!</h6>
                 <div class="footer__icons">
                     <a class="footer__icon" href="mailto:bkgryphons@gmail.com"><i class="far fa-envelope"></i></a>
                     <a class="footer__icon" href="https://vk.com/inballwetrust"><i class="fab fa-vk"></i></a>
                     <a class="footer__icon" href="https://www.instagram.com/bkgrifons/"><i class="fab fa-instagram"></i></a>
                 </div>
+                
                 <p class="footer__date"><i class="fas fa-basketball-ball"></i> Клуб основан в 2012 году</p>
             </div>
             <div class="footer__map">
-                <iframe class="lazy" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8024.980522712003!2d37.58784464899115!3d55.73428641978148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54baf49fd9dd9%3A0xdbd3657d77b2966!2z0YPQuy4g0J7RgdGC0L7QttC10L3QutCwLCAzOCwg0JzQvtGB0LrQstCwLCAxMTkwMzQ!5e0!3m2!1sru!2sru!4v1514369522808" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe class="lazy" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8024.980522712003!2d37.58784464899115!3d55.73428641978148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54baf49fd9dd9%3A0xdbd3657d77b2966!2z0YPQuy4g0J7RgdGC0L7QttC10L3QutCwLCAzOCwg0JzQvtGB0LrQstCwLCAxMTkwMzQ!5e0!3m2!1sru!2sru!4v1514369522808" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             
         </footer>
@@ -712,7 +715,8 @@
 
 <!-- JQUERY START ==================================================================== --> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- подключаем jquery -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    
     <!-- slick slider -->
     <script>
     $('.media__slider').slick();

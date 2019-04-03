@@ -1,4 +1,5 @@
 .header {
+    z-index: 11;
     animation: fromleft;
     animation-duration: 0.7s;
     width: 80px;
@@ -7,7 +8,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position: fixed;
     left: 0px;
     top: 0px;
     background:$text-primary-color;
@@ -86,6 +87,3 @@
     animation-duration: 0.7s;
 }
 
-.display-none {
-    display: none;
-}

@@ -1,19 +1,21 @@
 const buttonHeaderMenu = document.getElementById('header-button-menu');
 const iconHeaderMenuBack = document.getElementById('header-icon-back');
 const iconHeaderMenu = document.getElementById('header-icon-menu');
+const headerHomeButton = document.getElementById('header-home-button');
 
-const buttonFooterMenu = document.getElementById('footer-menu-button');
-const iconFooterMenuLeft = document.getElementById('footer-icon-left');
-const iconFooterMenuRight = document.getElementById('footer-icon-right');
-const footerBlock = document.getElementById('footer');
+const pageHome = document.getElementById('page-home');
+const pageMenu =document.getElementById('page-menu');
+
 
 buttonHeaderMenu.onclick = function(){
     iconHeaderMenuBack.classList.toggle('display-none');
     iconHeaderMenu.classList.toggle('display-none');
+    
+    pageMenu.classList.toggle('display-none');
 }
 
-buttonFooterMenu.onclick = function(){
-    iconFooterMenuLeft.classList.toggle('display-none');
-    iconFooterMenuRight.classList.toggle('display-none');
-    footerBlock.classList.toggle('footer-display-right');
+headerHomeButton.onclick = function() {
+    pageMenu.classList.add('display-none');
+    
+    pageHome.classList.remove('display-none');
 }

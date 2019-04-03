@@ -1,3 +1,81 @@
 .form {
-    display: none;
+    
+    width: 100%;
+    min-height: 1080px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 40px;
+    margin-top: 20px;
+    &__poster {
+        animation: frombottom;
+        animation-duration: 0.7s;
+        width: 70%;
+        margin-bottom: 40px;
+        border: 8px solid white;
+        box-shadow: 4px 4px 4px $text-color;
+    }
+    &__title {
+        animation: fromleft;
+        animation-duration: 0.7s;
+        color: $dark-primary-color;
+        font-family: $title-font-family;
+        font-size: $title1;
+        text-shadow: 1px 1px 1px $light-primary-color;
+        margin-bottom: 60px;
+    }
+    &__field {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+    &__label {
+        margin-bottom: 20px;
+        color: $dark-primary-color;
+        font-family: $main-font-family;
+        font-size: $title3;
+        text-shadow: 1px 1px 1px $light-primary-color;
+        
+        line-height: 1.5;
+    
+    }
+    &__input {
+        margin-bottom: 40px;
+        color: $dark-primary-color;
+        font-family: $main-font-family;
+        font-size: $title2;
+        text-shadow: 1px 1px 1px $light-primary-color;
+        cursor: pointer;
+        line-height: 1.5;
+        background: transparent;
+        width: 100%;
+        height: 40px;
+        border: 0px;
+        border-bottom: 2px solid $dark-primary-color;
+    }
+    &__button {
+        width: 300px;
+        cursor: pointer;
+        background:$accent-color;
+        border: 0px;
+        padding: 15px;
+        font-family: $title-font-family;
+        text-align: center;
+        font-size: $title2;
+        color: $text-primary-color;
+        text-shadow: 1px 1px 1px $dark-primary-color;
+        margin-bottom: 20px;
+        box-shadow: 4px 4px 4px $text-color;
+    }
+}
+
+.vk-widget {
+    width: 60%;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
