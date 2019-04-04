@@ -7,10 +7,14 @@
     margin-left: 40px;
     margin-top: 20px;
     &__logo {
+        animation: frombottom;
+        animation-duration: 0.7s;
         width: 150px;
         margin-bottom: 20px;
     }
     &__titles {
+        animation: fromleft;
+        animation-duration: 0.7s;
         width: 100%;
         margin-bottom: 40px;
         display: flex;
@@ -41,6 +45,8 @@
         margin-bottom: 20px;
     }
     &__poster{
+        animation: fromtop;
+        animation-duration: 0.7s;
         border: 8px solid white;
         width: 80%;
         margin-bottom: 40px;
@@ -55,6 +61,8 @@
         margin-bottom: 20px;
     }
     &__sectitle {
+        animation: fromleft;
+        animation-duration: 0.7s;
         margin-bottom: 20px;
         color: $dark-primary-color;
         font-family: $main-font-family;
@@ -64,6 +72,8 @@
         line-height: 1.5;
     }
     &__text {
+        animation: fromleft;
+        animation-duration: 0.7s;
         margin-bottom: 20px;
         color: $dark-primary-color;
         font-family: $main-font-family;
@@ -72,6 +82,8 @@
         line-height: 1.5;
     }
     &__quotes {
+        animation: fromright;
+        animation-duration: 0.7s;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -81,7 +93,7 @@
         padding-bottom: 20px;
         padding-top: 20px;
         border-top: 2px solid white;
-        border-bottom: 2px solid white;
+        
     }
     &__quote {
         text-align: right;
@@ -100,10 +112,13 @@
         margin-bottom: 20px;
     }
     &__icon {
+        display: none;
         width: 100px;
         border-radius: 50%;
     }
     &__button {
+        animation: fromleft;
+        animation-duration: 0.7s;
         cursor: pointer;
         background:$accent-color;
         border: 0px;
