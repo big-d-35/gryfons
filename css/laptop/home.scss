@@ -4,19 +4,19 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-left: 40px;
+    margin-left: 20px;
     margin-top: 20px;
     &__logo {
         animation: frombottom;
         animation-duration: 0.7s;
-        width: 150px;
-        margin-bottom: 20px;
+        width: 100px;
+        margin-bottom: 10px;
     }
     &__titles {
         animation: fromleft;
         animation-duration: 0.7s;
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -26,15 +26,15 @@
         
         color: $dark-primary-color;
         font-family: $title-font-family;
-        font-size: $title1;
+        font-size: $title1-laptop;
         text-shadow: 1px 1px 1px $light-primary-color;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         line-height: 1.5;
     }
     &__subtitle {
         color: $dark-primary-color;
         font-family: $main-font-family;
-        font-size: $title2;
+        font-size: $title2-laptop;
         text-shadow: 1px 1px 1px $light-primary-color;
         line-height: 1.5;
     }
@@ -56,7 +56,7 @@
         box-shadow: 4px 4px 4px $text-color;
     }
     &__information {
-        width: 70%;
+        width: 85%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -70,7 +70,7 @@
         margin-bottom: 20px;
         color: $dark-primary-color;
         font-family: $main-font-family;
-        font-size: $title2;
+        font-size: $title2-laptop;
         text-shadow: 1px 1px 1px $light-primary-color;
         font-weight: bold;
         line-height: 1.5;
@@ -81,7 +81,7 @@
         margin-bottom: 20px;
         color: $dark-primary-color;
         font-family: $main-font-family;
-        font-size: $title3;
+        font-size: $title3-laptop;
         text-shadow: 1px 1px 1px $light-primary-color;
         line-height: 1.5;
     }
@@ -105,14 +105,14 @@
         color: $dark-primary-color;
         
         font-family: $main-font-family;
-        font-size: $title3;
+        font-size: $title3-laptop;
         margin-bottom: 10px;
         font-style: italic;
     }
     &__name {
         color: $dark-primary-color;
         font-family: $title-font-family;
-        font-size: $title2;
+        font-size: $title2-laptop;
         margin-bottom: 20px;
     }
     &__icon {

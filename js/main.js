@@ -17,18 +17,38 @@ const pageAbout = document.getElementById('page-about');
 const pageMedia = document.getElementById('page-media');
 const pageFooter = document.getElementById('page-footer');
 
+
 //СТРАНИЦЫ
 
+//ССЫЛКИ
+const linkHomePage = document.getElementById('link-home-page');
+const linkFormPage = document.getElementById('link-home-page');
+const linkMediaPage = document.getElementById('link-home-page');
+
+
+//ССЫЛКИ
 
 buttonHeaderMenu.onclick = function(){
-    iconHeaderMenuBack.classList.toggle('display-none');
-    iconHeaderMenu.classList.toggle('display-none');
+    pageHome.classList.remove('page-active');
+    pageForm.classList.remove('page-active');
+    pageMedia.classList.remove('page-active');
     
-    pageMenu.classList.toggle('display-none');
+    
+    pageMenu.classList.add('page-active');
+    
 }
 
-headerHomeButton.onclick = function() {
-    pageMenu.classList.add('display-none');
+linkHomePage.onclick = function(){
     
-    pageHome.classList.remove('display-none');
+    pageMenu.classList.remove('page-active');
+    pageHome.classList.add('page-active');
+}
+
+linkFormPage.onclick = function(){
+    
+    let activePage = document.getElementsByClassName('page-active');
+    let thisActivePage = activePage[0];
+    
+    thisActivePage.classList.remove('page-active');
+    pageForm.classList.add('page-active');
 }

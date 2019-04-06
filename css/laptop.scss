@@ -1,0 +1,22 @@
+@import 'variables.scss';
+@import 'animations';
+@import 'laptop/wrapper.scss';
+@import 'laptop/header.scss';
+@import 'laptop/main.scss';
+@import 'laptop/home.scss';
+@import 'laptop/menu.scss';
+@import 'laptop/form.scss';
+@import 'laptop/about.scss';
+@import 'laptop/media.scss';
+
+
+@import 'laptop/footer.scss';
+
+
+
+.page-active {
+    display: flex;
+}
+.display-none {
+    display: none;
+}

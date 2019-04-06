@@ -1,0 +1,22 @@
+@import 'variables.scss';
+@import 'animations';
+@import 'tablet/wrapper.scss';
+@import 'tablet/header.scss';
+@import 'tablet/main.scss';
+@import 'tablet/home.scss';
+@import 'tablet/menu.scss';
+@import 'tablet/form.scss';
+@import 'tablet/about.scss';
+@import 'tablet/media.scss';
+
+
+@import 'tablet/footer.scss';
+
+
+
+.page-active {
+    display: flex;
+}
+.display-none {
+    display: none;
+}

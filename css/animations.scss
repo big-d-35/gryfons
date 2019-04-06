@@ -65,3 +65,66 @@
       }
     }
 //BOTTOM animation
+
+//BASKETBALL
+@keyframes basketball {
+    0% {
+        //opacity: 0;
+        transform: translateY(-50px);
+        
+      }
+    
+    50% {
+        //opacity: 1;
+        transform: translateY(0px);
+        
+      }
+    
+    100% {
+        //opacity: 0;
+        transform: translateY(-50px);
+        
+    }
+}
+
+//LEFT RIGHT
+@keyframes leftRight {
+    0% {
+        //opacity: 0;
+        transform: translatex(-20px);
+        
+      }
+    
+    50% {
+        //opacity: 1;
+        transform: translatex(0px);
+        
+      }
+    
+    100% {
+        //opacity: 0;
+        transform: translatex(-20px);
+        
+    }
+}
+
+//RIGHT LEFT 
+@keyframes rightLeft {
+    0% {
+        //opacity: 0;
+        transform: translatex(0px);
+        
+      }
+    
+    50% {
+        //opacity: 1;
+        transform: translatex(-20px);
+        
+      }
+    
+    100% {
+        //opacity: 0;
+        transform: translatex(0px);
+        
+    }
+}

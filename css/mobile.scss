@@ -1,0 +1,22 @@
+@import 'variables.scss';
+@import 'animations';
+@import 'mobile/wrapper.scss';
+@import 'mobile/header.scss';
+@import 'mobile/main.scss';
+@import 'mobile/home.scss';
+@import 'mobile/menu.scss';
+@import 'mobile/form.scss';
+@import 'mobile/about.scss';
+@import 'mobile/media.scss';
+
+
+@import 'mobile/footer.scss';
+
+
+
+.page-active {
+    display: flex;
+}
+.display-none {
+    display: none;
+}

@@ -1,28 +1,28 @@
 .menu {
     z-index: 10px;
     width: 100%;
-    min-height: 1080px;
+    min-height: 1px;
     height: 100%;
     display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-left: 40px;
-    margin-top: 20px;
+    margin-left: 0px;
+    margin-top: 80px;
     background-image: radial-gradient(circle, #bdbdbd, #c4c4c4, #cbcbcb, #d3d3d3, #dadada);
     &__title {
         animation: fromtop;
         animation-duration: 0.7s;
         color: $dark-primary-color;
         font-family: $title-font-family;
-        font-size: $title1;
+        font-size: $title1-laptop;
         text-shadow: 1px 1px 1px $light-primary-color;
         margin-bottom: 20px;
     }
     &__plate {
         animation: fromleft;
         animation-duration: 0.7s;
-        width: 70%;
+        width: 100%;
         border-top: 2px solid white;
         padding-top: 20px;
         
@@ -36,8 +36,8 @@
     &__links {
         width:100%;
         margin-bottom: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
     &__link {
         cursor: pointer;
@@ -61,8 +61,8 @@
         animation: frombottom;
         animation-duration: 0.7s;
         border: 8px solid white;
-        width: 70%;
-        margin-bottom: 40px;
+        width: 90%;
+        margin-bottom: 20px;
         box-shadow: 4px 4px 4px $text-color;
     }
 }

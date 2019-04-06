@@ -1,0 +1,93 @@
+
+.footer {
+    z-index: 11;
+    animation: fromright;
+    animation-duration: 0.5s;
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    right: 0px;
+    top: 0px;
+    
+    background: $dark-primary-color;
+    border-left: 0px solid white;
+     border-top: 8px solid white;
+    &__block {
+        
+        width: 90%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    &__title {
+        font-family:$title-font-family;
+        font-size: $title2-laptop;
+        margin-bottom: 5px;
+        color: $light-primary-color;
+        line-height: 1.5;
+    }
+    &__text {
+        
+        margin-bottom: 20px;
+        line-height: 1.2;
+       font-family: $main-font-family;
+        color: $light-primary-color;
+        font-size: $sub-title;
+    }
+    &__icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    &__icon {
+        cursor: pointer;
+        color: $light-primary-color;
+        font-size: $title2;
+        margin-right: 10px;
+        &:hover {
+            color: $text-primary-color;
+            transition-duration: .4s
+        } 
+    }
+    &__adress {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    &__link {
+        text-decoration: none;
+        cursor: pointer;
+        font-family: $main-font-family;
+        color: $light-primary-color;
+        font-size: $title3;
+        &:hover {
+            color: $text-primary-color;
+            transition-duration: .4s
+        } 
+    }
+    &__slogan {
+        margin-bottom: 10px;
+        line-height: 1.2;
+       font-family: $main-font-family;
+        color: $light-primary-color;
+        font-size: $sub-title;
+        
+    }
+    &__map {
+        height: 40%;
+        width: 100%;
+    }
+    &__date {
+        margin-bottom: 10px;
+        line-height: 1.2;
+        font-family: $main-font-family;
+        color: $light-primary-color;
+        font-size: 12px;
+    }
+}

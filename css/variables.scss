@@ -9,6 +9,19 @@ $title2: $body*1.5;
 $title3: $body*1;
 $sub-title: $body*0.75;
 
+$body-laptop: 16px;
+$title1-laptop: $body-laptop*4;
+$title2-laptop: $body-laptop*1.5;
+$title3-laptop: $body-laptop*1;
+$sub-title-laptop: $body-laptop*0.75;
+
+$body-mobile: 16px;
+$title1-mobile: $body-mobile*4;
+$title2-mobile: $body-mobile*1.5;
+$title3-mobile: $body-mobile*1;
+$sub-title-mobile: $body-mobile*0.75;
+
+
 $text-primary-color: #FFFFFF; //white
 $title-color: #212121; //black
 $text-color: #757575; //grey

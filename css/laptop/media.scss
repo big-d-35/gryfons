@@ -1,5 +1,5 @@
 .media {
-    width: 100%;
+    width: 80%;
     min-height: 1080px;
     height: 100%;
     display: none;
@@ -14,13 +14,13 @@
         animation-duration: 0.7s;
         color: $dark-primary-color;
         font-family: $title-font-family;
-        font-size: $title1;
+        font-size: $title1-laptop;
         text-shadow: 1px 1px 1px $light-primary-color;
         margin-bottom: 20px;
     }
     &__pictures {
-        width: 70%;
-        overflow: hidden;
+        width: 100%;
+        
         margin-bottom: 20px;
          padding-bottom: 20px;
         padding-top: 20px;
@@ -31,8 +31,8 @@
         width: 100%;
     }
     &__slider {
-        object-fit: cover;
-        overflow-x: hidden;
+       
+        
         width: 100%;
     }
     &__slide {
@@ -42,7 +42,7 @@
         
     }
     &__files {
-        width: 60%;
+        width: 90%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -59,7 +59,7 @@
         margin-bottom: 20px;
     }
     &__logo {
-        width: 100px;
+        width: 80px;
         margin: 10px;
         padding: 10px;
         border: 2px solid $text-primary-color;
@@ -72,10 +72,10 @@
         color: $dark-primary-color;
         text-decoration: none;
         font-family: $main-font-family;
-        font-size: $title3;
+        font-size: $title3-laptop;
         margin-bottom: 10px;
         
-        width: 340px;
+        width: 270px;
         margin-left: 20px;
         border-bottom: 1px solid $dark-primary-color;
         &:hover {
@@ -96,7 +96,7 @@
     padding: 5px;
     font-family: $title-font-family;
     text-align: center;
-    font-size: $title3;
+    font-size: $title3-laptop;
     color: $text-primary-color;
     text-shadow: 3px 3px 2px $dark-primary-color;
     

@@ -1,18 +1,18 @@
 .form {
     
     width: 100%;
-    min-height: 1080px;
+    min-height: 1px;
     height: 100%;
     display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-left: 40px;
-    margin-top: 20px;
+    margin-left: 0px;
+    margin-top: 120px;
     &__poster {
         animation: frombottom;
         animation-duration: 0.7s;
-        width: 70%;
+        width: 100%;
         margin-bottom: 40px;
         border: 8px solid white;
         box-shadow: 4px 4px 4px $text-color;
@@ -22,13 +22,13 @@
         animation-duration: 0.7s;
         color: $dark-primary-color;
         font-family: $title-font-family;
-        font-size: $title1;
+        font-size: $title1-laptop;
         text-shadow: 1px 1px 1px $light-primary-color;
         margin-bottom: 40px;
     }
     &__field {
         padding-top: 15px;
-        width: 53%;
+        width: 60%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -41,7 +41,7 @@
         margin-bottom: 20px;
         color: $dark-primary-color;
         font-family: $main-font-family;
-        font-size: $title3;
+        font-size: $title3-laptop;
         text-shadow: 1px 1px 1px $light-primary-color;
         
         line-height: 1.5;
@@ -52,7 +52,7 @@
         margin-bottom: 40px;
         color: $dark-primary-color;
         font-family: $main-font-family;
-        font-size: $title2;
+        font-size: $title2-laptop;
         text-shadow: 1px 1px 1px $light-primary-color;
         cursor: pointer;
         line-height: 1.5;
@@ -72,7 +72,7 @@
         margin-left: 20px;
         font-family: $title-font-family;
         text-align: center;
-        font-size: $title2;
+        font-size: $title2-laptop;
         color: $text-primary-color;
         text-shadow: 1px 1px 1px $dark-primary-color;
         margin-bottom: 20px;
@@ -85,7 +85,7 @@
 }
 
 .vk-widget {
-    width: 54%;
+    width: 60%;
     margin-bottom: 20px;
     margin-top: 40px;
      box-shadow: 4px 4px 4px $text-color;

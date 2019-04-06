@@ -15,7 +15,7 @@
         animation-duration: 0.7s;
         color: $dark-primary-color;
         font-family: $title-font-family;
-        font-size: $title1;
+        font-size: $title1-laptop;
         text-shadow: 1px 1px 1px $light-primary-color;
         margin-bottom: 20px;
     }
@@ -48,7 +48,7 @@
         text-decoration: none;
         color: $dark-primary-color;
         font-family: $main-font-family;
-        font-size: $title2;
+        font-size: $title2-laptop;
         text-shadow: 1px 1px 1px $light-primary-color;
         line-height: 1.5;
         &:hover {

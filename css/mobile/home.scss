@@ -1,22 +1,22 @@
 .home {
-    width: 90%;
+    width: 100%;
     display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-left: 40px;
-    margin-top: 20px;
+    margin-left: 0px;
+    margin-top: 80px;
     &__logo {
         animation: frombottom;
         animation-duration: 0.7s;
-        width: 150px;
-        margin-bottom: 20px;
+        width: 80px;
+        margin-bottom: 10px;
     }
     &__titles {
         animation: fromleft;
         animation-duration: 0.7s;
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -26,17 +26,17 @@
         
         color: $dark-primary-color;
         font-family: $title-font-family;
-        font-size: $title1;
+        font-size: $title1-laptop;
         text-shadow: 1px 1px 1px $light-primary-color;
         margin-bottom: 20px;
-        line-height: 1.5;
+        line-height: 1;
     }
     &__subtitle {
         color: $dark-primary-color;
         font-family: $main-font-family;
-        font-size: $title2;
+        font-size: $title2-laptop;
         text-shadow: 1px 1px 1px $light-primary-color;
-        line-height: 1.5;
+        line-height: 1;
     }
     
     &__info{
@@ -51,12 +51,12 @@
         animation: fromtop;
         animation-duration: 0.7s;
         border: 8px solid white;
-        width: 80%;
-        margin-bottom: 40px;
+        width: 90%;
+        margin-bottom: 20px;
         box-shadow: 4px 4px 4px $text-color;
     }
     &__information {
-        width: 70%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -70,7 +70,7 @@
         margin-bottom: 20px;
         color: $dark-primary-color;
         font-family: $main-font-family;
-        font-size: $title2;
+        font-size: $title2-laptop;
         text-shadow: 1px 1px 1px $light-primary-color;
         font-weight: bold;
         line-height: 1.5;
@@ -81,7 +81,7 @@
         margin-bottom: 20px;
         color: $dark-primary-color;
         font-family: $main-font-family;
-        font-size: $title3;
+        font-size: $title3-laptop;
         text-shadow: 1px 1px 1px $light-primary-color;
         line-height: 1.5;
     }
@@ -94,7 +94,7 @@
         justify-content: flex-start;
         align-items: flex-end;
         margin-bottom: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 0px;
         padding-top: 20px;
         border-top: 2px solid white;
         
@@ -105,15 +105,15 @@
         color: $dark-primary-color;
         
         font-family: $main-font-family;
-        font-size: $title3;
+        font-size: $title3-laptop;
         margin-bottom: 10px;
         font-style: italic;
     }
     &__name {
         color: $dark-primary-color;
         font-family: $title-font-family;
-        font-size: $title2;
-        margin-bottom: 20px;
+        font-size: $title2-laptop;
+        margin-bottom: 0px;
     }
     &__icon {
         display: none;
@@ -133,7 +133,7 @@
         padding: 15px;
         font-family: $title-font-family;
         text-align: center;
-        font-size: $title2;
+        font-size: $title2-mobile;
         color: $text-primary-color;
         text-shadow: 1px 1px 1px $dark-primary-color;
         margin-bottom: 20px;

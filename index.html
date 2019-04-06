@@ -16,10 +16,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" media="all and (min-width: 1201px)" href="css/desktop.css">
-    <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="">
-    <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href=""> 
-    <link rel="stylesheet" media="all and (max-width: 600px)" href="">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" media="all and (min-width: 901px) and (max-width: 1200px)" href="css/laptop.css">
+    <link rel="stylesheet" media="all and (min-width: 601px) and (max-width: 900px)" href="css/tablet.css"> 
+    <link rel="stylesheet" media="all and (max-width: 600px)" href="css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="css/slick/slick.css"/>
 <!-- CSS STYLE ======================================================= -->
     
 <!-- OPEN GRAPH ======================================================= -->
@@ -89,7 +89,7 @@
        
     <!-- HOME PAGE START ==================================================================== --> 
           
-    <section class="home "id="page-home">
+    <section class="home page-active"id="page-home">
        <picture >
               <source media="all and (min-width: 1201px)"
                       data-srcset="images/logo/grypfons_logo_800.png">
@@ -110,7 +110,7 @@
         
         <div class="home__titles">
             <h1 class="home__title">Баскетбольный клуб Грифоны</h1>
-            <h2 class="home__subtitle"><i class="fas fa-basketball-ball"></i> Тренировки по баскетболу в Москве</h2>
+            <h2 class="home__subtitle">Тренировки по баскетболу в Москве</h2>
         </div>
         <div class="home__info">
             <picture >
@@ -130,7 +130,8 @@
                       alt="jersey клуба" class="home__poster lazy">
 
             </picture>
-            <button class="home__button">Записаться на тренировку</button>
+            <button class="home__button">Записаться на тренировку <i class="fas fa-basketball-ball home__button-icon"></i> </button>
+          
             <div class="home__information">
                 <h2 class="home__sectitle">Наш клуб проводит тренировки по баскетболу </h2>
                 <p class="home__text">Мы принимаем детей от 6 лет и взрослых. Если ты готов по-настоящему тренироваться, найти новых друзей и почувствовать себя членом команды, приходи к нам на просмотр!</p>
@@ -150,27 +151,27 @@
     
      <!-- MENU PAGE START ==================================================================== --> 
              
-    <section class="menu display-none" id="page-menu">
+    <section class="menu " id="page-menu">
         <h2 class="menu__title">Навигация по сайту:</h2> 
         <div class="menu__plate">
             <div class="menu__links">
-                <a href="" class="menu__link">Главная <i class="fas fa-home"></i></a>
+                <a href="#" class="menu__link" id="link-home-page">Главная <i class="fas fa-home"></i></a>
             </div>
             <div class="menu__links">
-                <a href="" class="menu__link">Записаться  <i class="fas fa-pen"></i></a>
+                <a href="#" class="menu__link" id="link-form-page">Записаться  <i class="fas fa-pen"></i></a>
             </div>
+        <!-- <div class="menu__links">
+                <a href="" class="menu__link" id="link-about-page">О клубе  <i class="fas fa-book"></i></a>
+            </div> -->
+        <!-- <div class="menu__links">
+                <a href="" class="menu__link" id="link-articles-page">Статьи <i class="fas fa-basketball-ball"></i></a>
+            </div> -->
             <div class="menu__links">
-                <a href="" class="menu__link">О клубе  <i class="fas fa-book"></i></a>
+                <a href="#" class="menu__link" id="link-media-page">Медиа <i class="far fa-images"></i></a>
             </div>
-            <div class="menu__links">
-                <a href="" class="menu__link">Статьи <i class="fas fa-basketball-ball"></i></a>
-            </div>
-            <div class="menu__links">
-                <a href="" class="menu__link">Медиа <i class="far fa-images"></i></a>
-            </div>
-            <div class="menu__links">
-                <a href="" class="menu__link">Контакты <i class="fas fa-map-pin"></i></a>
-            </div>
+           <!-- <div class="menu__links">
+                <a href="" class="menu__link" id="link-contacts-page">Контакты <i class="fas fa-map-pin"></i></a>
+            </div> -->
         </div>
         <picture >
               <source media="all and (min-width: 1201px)"
@@ -194,7 +195,7 @@
     <!-- MENU PAGE END ==================================================================== -->                                          
    
     <!-- FORM PAGE START ==================================================================== -->                                                                       
-    <div class="form display-none" id="page-form">
+    <section class="form " id="page-form">
       <h2 class="form__title">Запишись на тренировку!</h2>
        <picture >
               <source media="all and (min-width: 1201px)"
@@ -226,29 +227,29 @@
                 <p><a name="form"></a><label class="form__label" for="name">Ваше имя</label></p> <p><input class="form__input" type="text" name="Name" required></p>
 
                 <p><label class="form__label" for="tel">Телефон в формате +7-xxx-xxx-xx-xx</label></p> <p><input class="form__input" type="text" name="Phone" required></p><!--проверка номера телефона-->
-                <p><button class="form__button" type="submit">Записаться</button></p>
+                <p><button class="form__button" type="submit">Записаться на тренировку<i class="fas fa-basketball-ball home__button-icon"></i> </button></p>
             </fieldset>
             
-            <!-- VK Widget ====================================================== -->
-            <div class="vk-widget">      
+            
+            
+        </form>
+         <!-- VK Widget ====================================================== -->
+        <div class="vk-widget">      
                       <!-- VK Widget -->
                     <div id="vk_groups"></div>
                     <script type="text/javascript">
                     VK.Widgets.Group("vk_groups", {mode: 5, width: "auto", height: "400px"}, 57459796);
                     </script>
                    
-            </div>
-            <!-- VK Widget ====================================================== -->
-            
-        </form>
-                                                                                                                                          
-    </div>
+        </div>
+        <!-- VK Widget ====================================================== -->                                                                                                                                 
+    </section>
     
      <!--  FORM PAGE END ==================================================================== -->   
      
      <!-- ABOUT PAGE START ==================================================================== --> 
         
-    <section class="about" id="page-about">
+    <section class="about " id="page-about">
         <h2 class="about__title">История клуба <i class="fas fa-book"></i></h2>
         <article class="about__text">
             
@@ -260,7 +261,7 @@
     <!-- MEDIA PAGE START ==================================================================== --> 
         
     
-    <section class="media display-none" id="page-media">
+    <section class="media " id="page-media">
        <h2 class="media__title">Фотографии команды:</h2>
         <div class="media__pictures">
             <div class="media__slider">
@@ -279,7 +280,7 @@
                                   data-srcset="images/page__team__photo/17__400px.jpg">
 
                           <img data-src="images/page__team__photo/17__800px.jpg"
-                              alt="poster" class="lazy">
+                              alt="poster" class="lazy media__picture">
 
                      </picture>   
                 </div>
@@ -298,7 +299,7 @@
                                   data-srcset="images/page__team__photo/16__400px.jpg">
 
                           <img data-src="images/page__team__photo/16__800px.jpg"
-                              alt="poster" class="lazy">
+                              alt="poster" class="lazy media__picture">
 
                      </picture>     
                 </div>
@@ -317,7 +318,7 @@
                                   data-srcset="images/page__team__photo/15__400px.jpg">
 
                           <img data-src="images/page__team__photo/15__800px.jpg"
-                              alt="poster" class="lazy">
+                              alt="poster" class="lazy media__picture">
 
                      </picture>     
                 </div>
@@ -336,7 +337,7 @@
                                   data-srcset="images/page__team__photo/14__400px.jpg">
 
                           <img data-src="images/page__team__photo/14__800px.jpg"
-                              alt="poster" class="lazy">
+                              alt="poster" class="lazy media__picture">
 
                      </picture>     
                 </div>
@@ -355,7 +356,7 @@
                                   data-srcset="images/page__team__photo/13__400px.jpg">
 
                           <img data-src="images/page__team__photo/13__800px.jpg"
-                              alt="poster" class="lazy">
+                              alt="poster" class="lazy media__picture">
 
                      </picture>     
                 </div>
@@ -374,7 +375,7 @@
                                   data-srcset="images/page__team__photo/12__400px.jpg">
 
                           <img data-src="images/page__team__photo/12__800px.jpg"
-                              alt="poster" class="lazy">
+                              alt="poster" class="lazy media__picture">
 
                      </picture>     
                 </div>
@@ -393,7 +394,7 @@
                                   data-srcset="images/page__team__photo/11__400px.jpg">
 
                           <img data-src="images/page__team__photo/11__800px.jpg"
-                              alt="poster" class="lazy">
+                              alt="poster" class="lazy media__picture">
 
                      </picture>     
                 </div>
@@ -412,7 +413,7 @@
                                   data-srcset="images/page__team__photo/10__400px.jpg">
 
                           <img data-src="images/page__team__photo/10__800px.jpg"
-                              alt="poster" class="lazy">
+                              alt="poster" class="lazy media__picture">
 
                      </picture>     
                 </div>
@@ -431,7 +432,7 @@
                                   data-srcset="images/page__team__photo/9__400px.jpg">
 
                           <img data-src="images/page__team__photo/9__800px.jpg"
-                              alt="poster" class="lazy">
+                              alt="poster" class="lazy media__picture">
 
                      </picture>     
                 </div>
@@ -450,7 +451,7 @@
                                   data-srcset="images/page__team__photo/8__400px.jpg">
 
                           <img data-src="images/page__team__photo/8__800px.jpg"
-                              alt="poster" class="lazy">
+                              alt="poster" class="lazy media__picture">
 
                      </picture>     
                 </div>
@@ -469,7 +470,7 @@
                                   data-srcset="images/page__team__photo/7__400px.jpg">
 
                           <img data-src="images/page__team__photo/7__800px.jpg"
-                              alt="poster" class="lazy">
+                              alt="poster" class="lazy media__picture">
 
                      </picture>     
                 </div>
@@ -488,7 +489,7 @@
                                   data-srcset="images/page__team__photo/6__400px.jpg">
 
                           <img data-src="images/page__team__photo/6__800px.jpg"
-                              alt="poster" class="lazy">
+                              alt="poster" class="lazy media__picture">
 
                      </picture>     
                 </div>
@@ -507,7 +508,7 @@
                                   data-srcset="images/page__team__photo/5__400px.jpg">
 
                           <img data-src="images/page__team__photo/5__800px.jpg"
-                              alt="poster" class="lazy">
+                              alt="poster" class="lazy media__picture">
 
                      </picture>     
                 </div>
@@ -526,7 +527,7 @@
                                   data-srcset="images/page__team__photo/4__400px.jpg">
 
                           <img data-src="images/page__team__photo/4__800px.jpg"
-                              alt="poster" class="lazy">
+                              alt="poster" class="lazy media__picture">
 
                      </picture>     
                 </div>
@@ -545,7 +546,7 @@
                                   data-srcset="images/page__team__photo/3__400px.jpg">
 
                           <img data-src="images/page__team__photo/3__800px.jpg"
-                              alt="poster" class="lazy">
+                              alt="poster" class="lazy media__picture">
 
                      </picture>     
                 </div>
@@ -564,7 +565,7 @@
                                   data-srcset="images/page__team__photo/2__400px.jpg">
 
                           <img data-src="images/page__team__photo/2__800px.jpg"
-                              alt="poster" class="lazy">
+                              alt="poster" class="lazy media__picture">
 
                      </picture>     
                 </div>
@@ -583,7 +584,7 @@
                                   data-srcset="images/page__team__photo/1__400px.jpg">
 
                           <img data-src="images/page__team__photo/1__800px.jpg"
-                              alt="poster" class="lazy">
+                              alt="poster" class="lazy media__picture">
 
                      </picture>     
                 </div>
@@ -719,13 +720,15 @@
     
     <!-- slick slider -->
     <script>
-    $('.media__slider').slick();
+    $('.media__slider').slick({ 
+        
+    });
     </script>
 <!-- JQUERY END ==================================================================== --> 
 
 <!-- APP SCRIPT START ==================================================================== -->        
  
-<script src="js/main.min.js"></script>
+<script src="js/main.js"></script>
                 
 <!-- APP SCRIPT END ==================================================================== -->        
        
